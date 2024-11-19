@@ -9,15 +9,13 @@ The Calculator project is a simple yet powerful application designed to perform 
 - **Error Handling**: Gracefully handles errors such as division by zero.
 - **Clear Functionality**: Allows users to clear the current input easily.
 
-##Installation
+## Installation
 To install the Calculator project, follow these steps:
 
 1. Clone the repository:
 `git clone https://github.com/yourusername/calculator.git`
-
 2. Navigate to the project directory:
 `cd calculator`
-
 3. Open the project in your preferred IDE or text editor.
 
 ## Usage
