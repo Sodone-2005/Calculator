@@ -99,12 +99,11 @@
     }
 
     function appendNumber(number) {
-        // Check if the current expression is equal to the result
         if (expression === result.toString()) {
-            expression = ''; // Clear the expression
+            expression = '';
         }
-        expression += number; // Append the new number
-        updateScreen(expression); // Update the screen
+        expression += number;
+        updateScreen(expression);
     }
 
     function cancelTOT() {
@@ -176,15 +175,12 @@
     function equal() { calculate(); }
     function negate() {
         if (expression) {
-            // Controlla se l'espressione è già negativa
             if (expression.startsWith('-')) {
-                // Rimuove il segno negativo
                 expression = expression.slice(1);
             } else {
-                // Aggiunge il segno negativo
                 expression = '-' + expression;
             }
-            updateScreen(expression); // Aggiorna lo schermo
+            updateScreen(expression);
         }
     }
 </script>
