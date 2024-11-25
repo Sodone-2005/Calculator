@@ -27,7 +27,7 @@ To use the Calculator, simply run the application. You can input numbers and sel
 - **Multiplication**: Enter two numbers and press the * button.
 - **Division** : Enter two numbers and press the / button.
 
-##Contact
+## Contact
 For any questions or inquiries, please contact lorenzo.spagni.meacci@gmail.com
 
 Enjoy calculating!
