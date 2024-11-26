@@ -8,14 +8,6 @@ function updateScreen(value) {
     document.getElementById('screen').innerText = value;
 }
 
-function appendNumber(number) {
-    if (expression === result.toString()) {
-        expression = '';
-    }
-    expression += number;
-    updateScreen(expression);
-}
-
 function cancelTOT() {
     expression = '';
     updateScreen('');
@@ -63,25 +55,11 @@ function calculate() {
     }
 }
 
-function one() { appendNumber('1'); }
-function two() { appendNumber('2'); }
-function three() { appendNumber('3'); }
-function four() { appendNumber('4'); }
-function five() { appendNumber('5'); }
-function six() { appendNumber('6'); }
-function seven() { appendNumber('7'); }
-function eight() { appendNumber('8'); }
-function nine() { appendNumber('9'); }
-function zero() { appendNumber('0'); }
 function dot() {
     if (!expression.includes('.'))
         appendNumber('.');
 }
-function plus() { setOperator('+'); }
-function minus() { setOperator('-'); }
-function times() { setOperator('*'); }
-function divided() { setOperator('/'); }
-function equal() { calculate(); }
+
 function negate() {
     if (expression) {
         if (expression.startsWith('-'))
