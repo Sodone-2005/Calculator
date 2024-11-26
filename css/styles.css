@@ -1,0 +1,34 @@
+body {
+    background: rgb(63, 79, 251);
+    background: radial-gradient(circle, rgba(63, 79, 251, 1) 0%, rgba(157, 85, 196, 1) 50%, rgba(252, 70, 70, 1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+table {
+    height: 60%;
+    width: 30%;
+    background-color: white;
+}
+
+td:not(#screen) {
+    padding: 20px;
+    border: 1px solid black;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#screen {
+    font-size: 30px;
+    height: 10vh;
+    border: 1px solid black;
+    text-align: center;
+}
