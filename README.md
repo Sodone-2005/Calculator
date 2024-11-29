@@ -28,7 +28,7 @@ The Calculator project is a simple yet powerful application designed to perform 
 To install the Calculator project, follow these steps:
 
 1. Clone the repository:
-`git clone https://github.com/yourusername/calculator.git`
+`git clone https://github.com/Sodone-2005/calculator.git`
 
 2. Navigate to the project directory:
 `cd calculator`
