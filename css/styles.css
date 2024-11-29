@@ -32,3 +32,31 @@ td:not(#screen) {
     border: 1px solid black;
     text-align: center;
 }
+
+td:not(#screen, #cancel, #negate, #backspace):hover {
+    background-color: hsl(0, 0%, 90%);
+}
+
+#cancel {
+    background-color: hsla(0, 100%, 50%);
+}
+
+#cancel:hover {
+    background-color: hsl(0, 100%, 65%);
+}
+
+#negate{
+    background-color: hsla(0, 0%, 80%);
+}
+
+#negate:hover {
+    background-color: hsla(0, 0%, 85%);
+}
+
+#backspace{
+    background-color: hsla(39, 100%, 50%);
+}
+
+#backspace:hover{
+    background-color: hsla(39, 100%, 60%);
+}
