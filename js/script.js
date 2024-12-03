@@ -3,9 +3,10 @@ let result = '';
 let operator = '';
 let firstNumber = '';
 let secondNumber = '';
+let screen = document.getElementById('screen');
 
 function updateScreen(value) {
-    document.getElementById('screen').innerText = value;
+    screen.innerText = value;
 }
 
 function cancelTOT() {
@@ -36,20 +37,20 @@ function calculate() {
         secondNumber = expression;
         switch (operator) {
             case '+':
-                result = parseFloat(firstNumber) + parseFloat(secondNumber);
+                result = (parseFloat(firstNumber) + parseFloat(secondNumber)).toFixed(1);
                 break;
             case '-':
-                result = parseFloat(firstNumber) - parseFloat(secondNumber);
+                result = (parseFloat(firstNumber) - parseFloat(secondNumber)).toFixed(1);
                 break;
             case '*':
-                result = parseFloat(firstNumber) * parseFloat(secondNumber);
+                result = (parseFloat(firstNumber) * parseFloat(secondNumber)).toFixed(1);
                 break;
             case '/':
-                result = parseFloat(firstNumber) / parseFloat(secondNumber);
+                result = (parseFloat(firstNumber) / parseFloat(secondNumber)).toFixed(1);
                 break;
         }
-        updateScreen(result);
-        expression = result.toString();
+        updateScreen(firstNumber + ' ' + operator + ' ' + secondNumber + ' = ' + result);
+        expression = '';
         firstNumber = '';
         operator = '';
     }
